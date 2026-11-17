@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Consultar heróis</title>
+    <link rel="stylesheet" href="../css/get.css" />
+    <script src="../js/get.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div>
+        <h1>Lista de heróis</h1>
+        <p>Veja os personagens cadastrados.</p>
+      </div>
+      <a href="../index.html">Voltar</a>
+    </header>
+
+    <main>
+      <h2>Heróis cadastrados</h2>
+      <p id="resposta"></p>
+      <ul id="lista-herois"></ul>
+    </main>
+
+    <template id="modelo-heroi">
+      <li>
+        <div class="card-capa">
+          <img alt="" />
+        </div>
+        <div class="card-conteudo">
+          <h3 class="nome"></h3>
+          <p><strong>Poder:</strong> <span class="poder"></span></p>
+          <p><strong>Universo:</strong> <span class="universo"></span></p>
+          <p><strong>Fraqueza:</strong> <span class="fraqueza"></span></p>
+        </div>
+      </li>
+    </template>
+  </body>
+</html>
